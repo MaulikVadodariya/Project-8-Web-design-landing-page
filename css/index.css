@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-position: right top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/backcover.svg');
+}
+
+.main-div{
+    margin: 0 10rem;
+}
+
+nav{
+    display: flex;    
+}
+
+.nav-items{
+   display: flex;
+   width: 80%;  
+   justify-content: center;
+   text-align: center;  
+}
+
+.nav-items .nav-item{
+   margin: auto 0;
+    font-size: 20px;    
+    padding: 2.5rem;
+    font-weight: 600;
+    color: #3f4796;
+}
+
+.signin-div{
+    margin-left: auto;
+}
+
+.signin-btn {
+    background: linear-gradient(to right, #9862f0, #fa87d7);
+    padding: 0.5rem 1.5rem;   
+    width: 120px;
+    border: none;
+    color: #fff;
+    border-radius: 10rem;
+    margin: 2.5rem 1rem;
+    font-size: 1rem;
+}
+
+.menu{
+    display: none;
+}
+
+.intro-section{
+    display: flex;
+}
+
+.vector-img{
+    position: absolute;
+    bottom: 12rem;
+}
+
+.left-section{
+    width: 50%;
+}
+ 
+.left-section h1{
+    font-size: 5rem;    
+    margin: 10rem 0 3rem 0;
+    color: #3f4796;
+}
+
+.left-section h4{
+    font-weight: 400;
+    color: #414141;
+    margin-bottom: 3rem;
+    width: 350px;
+    line-height: 1.6;
+}
+
+.learn-more-btn{
+    background: linear-gradient(to right, #9862f0, #fa87d7);
+    padding: 1rem 2.5rem;   
+    width: 250px;
+    border: none;
+    color: #fff;
+    border-radius: 10rem;
+    font-size: 1.7rem;
+}
+
+@media screen and (max-width : 1400px) {
+   .main-img{
+        width: 100%;
+   }
+}
+
+@media screen and (max-width : 1200px) {
+
+    .intro-section{
+        flex-direction: column-reverse;
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    .menu{
+         display: block;
+         margin: auto 1rem;
+    }  
+    
+    .main-div{
+        margin: 0 2rem;
+    }
+
+    .vector-img{
+        display: none;
+    }
+    
+    .left-section h1{
+        font-size: 4rem;    
+        margin: auto;
+        text-align: center;
+    }
+
+    .left-section h4{
+        width: 80%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    nav img{
+        width: 150px;
+    }
+
+    .left-section{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .learn-more-btn{
+        display: block;
+        margin: auto;   
+        width: 200px;
+        border-radius: 3rem;
+        font-size: 1.2rem;
+    }
+ }
